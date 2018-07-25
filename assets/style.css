@@ -1,6 +1,8 @@
 body {
   background: #04bc88;
   font-family: system-ui, sans-serif;
+  font-size: 20px;
+  margin: 2em;
 }
 
 img {
@@ -24,6 +26,7 @@ nav a.active {
 
 nav a:hover {
   background: rgba(255,255,255,0.4);
+  transition: background-color 0.4s;
 }
 
 .cardgroup {
@@ -34,7 +37,14 @@ nav a:hover {
 
 .card {
   background: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.5);
   padding: 20px;
   margin: 10px;
   border: solid white 10px;
+  transition: box-shadow 1s, transform 1s;
+}
+
+.card:hover {
+  box-shadow: 0 1px 3px 3px rgba(0,0,0,0.5);
+  transform: scale(1.05);
 }
