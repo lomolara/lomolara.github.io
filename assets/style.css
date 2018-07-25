@@ -3,6 +3,10 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 nav {
   background-color: rgba(255,255,255,0.7);
   display: flex;
@@ -10,8 +14,27 @@ nav {
 
 nav a {
   padding: 20px;
+  text-decoration: none;
+  transition: background-color 0.4s;
 }
 
 nav a.active {
   background: white;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.cardgroup {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.card {
+  background: rgba(255,255,255,0.5);
+  padding: 20px;
+  margin: 10px;
+  border: solid white 10px;
 }
